@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microinteractions Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+  <h1 class="title">
+  Ayush More 16014123017 CCE UI/UX IA-1<br>
+  <span class="subtitle">
+    Microinteractions: Drag-and-Drop Upload with Animated Preview & File Thumbnail Gallery with Dynamic Reflow
+  </span>
+</h1>
+
+
+    <!-- Microinteraction A -->
+    <section class="upload-section card">
+      <div id="drop-area" class="drop-area" tabindex="0">
+        <p class="hint">Drag & Drop your files</p>
+        <p class="or">or</p>
+        <button id="fileSelectBtn" class="btn">Choose Files</button>
+        <input type="file" id="fileElem" multiple hidden>
+      </div>
+      <div id="upload-progress" class="progress hidden">
+        <div class="progress-bar"></div>
+      </div>
+      <div id="preview" class="preview"></div>
+    </section>
+
+    <!-- Microinteraction B -->
+    <section class="gallery-section card">
+      <h2 class="subtitle">Uploaded Files Gallery</h2>
+      <div id="gallery" class="gallery"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
